@@ -1,0 +1,26 @@
+{"level":"error","message":"Something has gone wrong!","service":"user-service"}
+2023-10-09T05:09:25.965Z [User service logs] error: Something has gone wrong!
+{
+  message: 'Something has gone wrong!',
+  level: 'error',
+  label: 'User service logs',
+  timestamp: 'Oct-09-2023 06:13:00'
+}
+{
+  message: 'User could not be added.',
+  level: 'error',
+  label: 'User service logs',
+  timestamp: 'Oct-10-2023 07:37:50'
+}
+{
+  message: 'User could not be added.',
+  level: 'error',
+  label: 'User service logs',
+  timestamp: 'Oct-10-2023 07:38:06'
+}
+{
+  message: 'Unauthorized.',
+  level: 'error',
+  label: 'User service logs',
+  timestamp: 'Oct-10-2023 07:42:47'
+}
