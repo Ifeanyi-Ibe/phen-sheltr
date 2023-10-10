@@ -15,21 +15,21 @@ const authMiddleware = async (req, res, next) => {
         next();
       }
     } catch (error) {
-      throw new Error("Unauthorized. Invalid or expired token.");
+      throw Error("Unauthorized. Invalid or expired token.");
     }
   } else {
-    throw new Error("Unauthorized. No token found in header");
+    throw Error("Unauthorized. No token found in header");
   }
 };
 
 const isAdmin = async (req, res, next) => {
   try {
     if (!req.user.role === "admin") {
-      throw new Error("Unauthorized.");
+      throw Error("Unauthorized.");
     }
     next();
   } catch (error) {
-    throw new Error("Unauthorized.");
+    throw Error("Unauthorized.");
   }
 };
 
@@ -48,10 +48,10 @@ const validateApiKey = async (req, res, next) => {
         console.log("Records not found");
       }
     } else {
-      throw new Error("Unauthorized. Api key is required.");
+      throw Error("Unauthorized. Api key is required.");
     }
   } catch (error) {
-    throw new Error("Unauthorized.");
+    throw Error("Unauthorized.");
   }
 };
 
